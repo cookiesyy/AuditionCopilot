@@ -1,0 +1,49 @@
+# Visual Studio编译产物
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.user
+*.suo
+*.cache
+
+# NuGet包
+packages/
+*.nupkg
+
+# Visual Studio临时文件
+.vs/
+*.vspscc
+*.vssscc
+*.sln.docstates
+
+# 用户特定文件
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 编译结果
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+
+# 测试结果
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+
+# 其他
+*.log
+*.tmp
+*.bak
+*~
+.DS_Store
+Thumbs.db

@@ -107,14 +107,14 @@ namespace AuditionCopilot
 
             UpdateLinePosition();
 
-           // Point? windowPosition = GetWindowPosition("DjDjau.com");
+           // Point? windowPosition = GetWindowPosition("劲舞团 华东一区");
 
 
 
 
 
 
-            Point? windowPosition = GetWindowPosition("DjDjau.com");
+            Point? windowPosition = GetWindowPosition("劲舞团 华东一区");
 
             rectKeys = new Rectangle(windowPosition.Value.X+275, windowPosition.Value.Y+587, this.picKey1.Width, this.picKey1.Height); //275  560
             rectBall = new Rectangle(windowPosition.Value.X+515, windowPosition.Value.Y+566, this.picBall1.Width, this.picBall1.Height);//由于私服公告栏的原因,官方用户如果不能正确识别按键，适当将566的值改小,例如536
