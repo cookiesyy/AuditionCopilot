@@ -17,7 +17,7 @@ jobs:
     steps:
     # 1. 检出代码
     - name: 检出代码
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
 
     # 2. 设置MSBuild环境
     - name: 设置MSBuild
@@ -50,13 +50,13 @@ jobs:
 
     # 8. 上传编译产物
     - name: 上传Release版本
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: AuditionCopilot-Release
         path: release-package/
 
     - name: 上传Debug版本
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: AuditionCopilot-Debug
         path: AuditionCopilot/bin/Debug/
