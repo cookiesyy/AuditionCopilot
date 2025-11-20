@@ -31,12 +31,12 @@ jobs:
     - name: 还原NuGet包
       run: nuget restore AuditionCopilot.sln
 
-    # 5. 编译项目（Debug版本）
-    - name: 编译Debug版本
+    # 5. 编译项目（Debug版本 - x64）
+    - name: 编译Debug版本 (x64)
       run: msbuild AuditionCopilot.sln /p:Configuration=Debug /p:Platform=x86
 
-    # 6. 编译项目（Release版本）
-    - name: 编译Release版本
+    # 6. 编译项目（Release版本 - x64）
+    - name: 编译Release版本 (x64)
       run: msbuild AuditionCopilot.sln /p:Configuration=Release /p:Platform=x86
 
     # 7. 收集编译产物
